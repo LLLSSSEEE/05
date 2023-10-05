@@ -9,16 +9,16 @@ int main(int argc, char *argv[])
     
     if (a>0)
     {
-          printf("positive.\n");
+         printf("absolute value is %d.\n", a);
     }
-    else if (a==0)
+    else if (a<0)
     {
-         printf("zero.\n");
+         printf("absolute value is %d.\n", -a);
     }
     else
     {
-        printf("negative.\n");
-    }
+         printf("absolute value is %d.\n", a);
+    } 
        
   
   system("PAUSE");	
