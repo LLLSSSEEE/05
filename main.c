@@ -3,22 +3,19 @@
 
 int main(int argc, char *argv[])
 {
-    int num = 0; // 괜히 이상한 숫자 들어가 있으면 안되니 까 
-    char c;
-    printf("input a string : ");
-    //scanf("%c", &a); getchar 쓰면 이거 안써도 됨. 
+    int sum = 0;
+    int num;
+    int i;
     
-
-    while ((c=getchar())!='\n')
+    printf("input a number: ");
+    scanf("%d", &num);
+    
+    for (i=0; i<=num; i++)
     {
-          if((c>='0') && (c<='9'))
-          {
-              num++; // num = num + 1
-          }
+        sum = sum + i;
     }
-              
-          
-    printf("the number of digits is %i\n.", num); 
+    
+    printf("The result is %d\n", sum); 
   
   system("PAUSE");	
   return 0;
